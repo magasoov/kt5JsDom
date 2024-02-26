@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit cart</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <form id="myForm">
+            <div class="danye">
+                    <h2>Заполните данные</h2> <br>
+                <label>Введите номер карты: <br>
+                    <input type="text" id="myInput" maxlength="19" oninput="displayText()" placeholder="1111 2222 3333 4444">
+                </label> <br><br>
+                <label>Введите имя: <br>
+                    <input type="text" id="myInputSber" oninput="nameSber()" placeholder="A.MUHAMMAD">
+                </label> <br> <br>
+                <label for="expiryDate">Дата окончания действия карты: <br>
+                    <input type="month" id="expiryDate" name="expiryDate" min="2024-02" max="2030-12" oninput="nameSberDD()">
+                </label> <br> <br>
+                    <button type="submit" class="btn" onclick="showInput()" id="send-button">Отправить данные</button>
+            </div>   
+        </form>
+        <div class="home-credit">
+            <div class="creditImage">
+                <p id="displayText" class="number">1111 2222 3333 4444</p>
+
+                <div class="nameDDMMGG">
+                    <p id="nameSber" class="nameLastSber">a.muhammad</p>
+                    <p id="nameDD" class="nameGG">2024-02</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <td>Номер карты</td>
+                    <td>Имя</td>
+                    <td>Дата</td>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td id="output"></th>
+                  <td id="output1"></td>
+                  <td id="output2"></td>
+                </tr>
+        </table>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

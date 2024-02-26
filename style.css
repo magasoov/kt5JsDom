@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13%;
+    padding-right: 13%;
+    align-items: center;
+
+}
+.creditImage{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    background-image: url(credit.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.number{
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #ffffffe0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4.5px;
+}
+.danye{
+    border: 1px solid #111;
+    text-align: left;
+    width: 250px;
+    padding-left: 20px;
+    height: 250px;
+}
+.nameDDMMGG{
+    display: flex;   
+}
+.nameDDMMGG p{
+    margin: 0 45px;
+}
+.nameLastSber{
+    position: relative;
+    top: 210px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.nameGG{
+    position: relative;
+    top: 210px;
+    left: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 500px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+td{
+    border: 1px solid #111;
+}
+.btn{
+    background: green;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .50s ease;
+}
+.btn:hover{
+    background: #fff;
+    color: green;
+    border: 1px solid green;
+    
+}
+@media (max-width: 1085px) {
+    main{
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+        justify-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .creditImage{
+        width: 400px;
+        height: 270px;
+        margin-top: 20px;
+    }
+    .number{
+        font-size: 25px;
+    }
+    .nameLastSber{
+    }
+}
